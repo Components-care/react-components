@@ -1,0 +1,956 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>components-care</title>
+	<meta name="description" content="Documentation for components-care">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">components-care</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>components-care</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#componentscare-react" id="componentscare-react" style="color: inherit; text-decoration: none;">
+					<h1><a href="https://components-care.github.io/react-components/">Components.care React</a></h1>
+				</a>
+				<p><a href="https://david-dm.org/Components-care/react-components"><img src="https://david-dm.org/Components-care/react-components/status.svg" alt="dependencies Status"></a>
+					<a href="https://david-dm.org/Components-care/react-components?type=dev"><img src="https://david-dm.org/Components-care/react-components/dev-status.svg" alt="devDependencies Status"></a>
+				<a href="https://david-dm.org/Components-care/react-components?type=peer"><img src="https://david-dm.org/Components-care/react-components/peer-status.svg" alt="peerDependencies Status"></a></p>
+				<p>Take a look at our <a href="https://components-care.github.io/react-components/storybook/">Storybook</a></p>
+				<a href="#installing" id="installing" style="color: inherit; text-decoration: none;">
+					<h2>Installing</h2>
+				</a>
+				<blockquote>
+					<p><code>npm install &quot;git://github.com/Components-care/react-components.git#master_dist&quot; --save --legacy-peer-deps</code></p>
+				</blockquote>
+				<blockquote>
+					<p><code>yarn add &quot;git://github.com/Components-care/react-components.git#master_dist&quot;</code></p>
+				</blockquote>
+				<p>Note: Make sure to install all peer-dependencies</p>
+				<a href="#overview" id="overview" style="color: inherit; text-decoration: none;">
+					<h2>Overview</h2>
+				</a>
+				<p>The aim of this project is to provide a solid fundation for developing complex React based web applications.</p>
+				<p>There are 5 types of components you will find here:</p>
+				<ul>
+					<li>Standalone Components<blockquote>
+							<p>Standalone Components are designed to run without any further integration of the Components.care framework and can be used as an extension of your existing UI libraries.</p>
+							<p>WARNING: If not using the Components-Care Framework you still need to add CCI18nProvider to your render tree for localization </p>
+						</blockquote>
+					</li>
+					<li>Application Framework<blockquote>
+							<p>The Application Framework provides you with a set of pre-configured common libraries to enable you rapid development of new applications</p>
+						</blockquote>
+					</li>
+					<li>Non-standalone Components<blockquote>
+							<p>UI Components based off the application framework</p>
+						</blockquote>
+					</li>
+					<li>Backend Integration<blockquote>
+							<p>Backend Integration provides automatic data management and a backend communication layer</p>
+						</blockquote>
+					</li>
+					<li>Backend Components<blockquote>
+							<p>Backend Components are UI components with Backend integration</p>
+						</blockquote>
+					</li>
+				</ul>
+				<p>Used Libraries:</p>
+				<ul>
+					<li>Material-UI (Used as base for UI components)</li>
+					<li>i18n (Used to provide pre-translated components)</li>
+					<li>react-router-dom (Provided by the framework to enable programmatically controllable routing in your React app)</li>
+					<li>moment.js (Used for localized date/time related components)</li>
+					<li>react-query (Used as backend connector/caching layer)</li>
+				</ul>
+				<a href="#developer-setup" id="developer-setup" style="color: inherit; text-decoration: none;">
+					<h2>Developer Setup</h2>
+				</a>
+				<a href="#running-the-developer-environment-storybook" id="running-the-developer-environment-storybook" style="color: inherit; text-decoration: none;">
+					<h3>Running the developer environment (Storybook)</h3>
+				</a>
+				<ol>
+					<li>Run <code>npx --no-install npm@7.x install</code></li>
+					<li>Run <code>npm start</code></li>
+				</ol>
+				<a href="#path-overview" id="path-overview" style="color: inherit; text-decoration: none;">
+					<h3>Path overview</h3>
+				</a>
+				<ul>
+					<li><code>src/</code>: Generic configuration files</li>
+					<li><code>src/assets</code>: Assets bundled by Webpack</li>
+					<li><code>src/utils</code>: Utility functions</li>
+					<li><code>src/standalone</code>: Standalone components</li>
+					<li><code>src/framework</code>: Framework components</li>
+					<li><code>src/non-standalone</code>: Non-standalone components</li>
+					<li><code>src/backend-integration</code>: Backend-integration components</li>
+					<li><code>src/backend</code>: Backend components</li>
+					<li><code>src/stories</code>: Storybook Stories for previewing library components</li>
+					<li><code>src/stories/standalone</code>: Storybook Stories for standalone components</li>
+					<li><code>src/stories/framework</code>: Storybook Stories for framework components</li>
+					<li><code>src/stories/non-standalone</code>: Storybook Stories for non-standalone components</li>
+					<li><code>src/stories/backend-integration</code>: Storybook Stories for backend-integration components</li>
+					<li><code>src/stories/backend</code>: Storybook Stories for backend components</li>
+				</ul>
+				<a href="#building-the-source-code" id="building-the-source-code" style="color: inherit; text-decoration: none;">
+					<h3>Building the source code</h3>
+				</a>
+				<ol>
+					<li>Run <code>npm install</code></li>
+					<li>Run <code>npm build</code></li>
+					<li>You&#39;ll find the output files under <code>dist/</code></li>
+				</ol>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="enums/apiauthmode.html" class="tsd-kind-icon">Api<wbr>Auth<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/apiconnector.html" class="tsd-kind-icon">Api<wbr>Connector</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/connector.html" class="tsd-kind-icon">Connector</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/infinitescroll.html" class="tsd-kind-icon">Infinite<wbr>Scroll</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/jsonapiclient.html" class="tsd-kind-icon">Json<wbr>Api<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/lazyconnector.html" class="tsd-kind-icon">Lazy<wbr>Connector</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/model.html" class="tsd-kind-icon">Model</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/modeldatatypebackendmultiselectrenderer.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Backend<wbr>Multi<wbr>Select<wbr>Renderer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/modeldatatypebackendmultiselectwithtagsrenderer.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Backend<wbr>Multi<wbr>Select<wbr>With<wbr>Tags<wbr>Renderer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/modeldatatypebackendsingleselectrenderer.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Backend<wbr>Single<wbr>Select<wbr>Renderer</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypeboolean.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Boolean</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypebooleancheckboxrenderercc.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Boolean<wbr>Checkbox<wbr>RendererCC</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypebooleancheckboxrenderermui.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Boolean<wbr>Checkbox<wbr>RendererMUI</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypebooleanswitchrenderermui.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Boolean<wbr>Switch<wbr>RendererMUI</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypedate.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Date</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypedatenullable.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Date<wbr>Nullable</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypedatenullablerenderercc.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Date<wbr>Nullable<wbr>RendererCC</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypedatenullablerenderermui.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Date<wbr>Nullable<wbr>RendererMUI</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypedaterenderermui.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Date<wbr>RendererMUI</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypedatetimenullablerenderercc.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Date<wbr>Time<wbr>Nullable<wbr>RendererCC</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypedecimalrenderercc.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Decimal<wbr>RendererCC</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypeenum.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Enum</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypeenummulti.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Enum<wbr>Multi</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypeenummulticheckboxrenderermui.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Enum<wbr>Multi<wbr>Checkbox<wbr>RendererMUI</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypeenumradiorenderermui.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Enum<wbr>Radio<wbr>RendererMUI</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypeenumselectrenderer.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Enum<wbr>Select<wbr>Renderer</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypeenumselectrenderermui.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Enum<wbr>Select<wbr>RendererMUI</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypefiles.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Files</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypefilesrenderer.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Files<wbr>Renderer</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypeid.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypeimagerenderer.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Image<wbr>Renderer</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypeimages.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Images</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypeintegerrenderercc.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Integer<wbr>RendererCC</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypesignaturerenderer.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Signature<wbr>Renderer</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypestring.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypestringarray.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>String<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypestringrenderercc.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>String<wbr>RendererCC</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/modeldatatypestringrenderermui.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>String<wbr>RendererMUI</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/baseselectordata.html" class="tsd-kind-icon">Base<wbr>Selector<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/baseselectorprops.html" class="tsd-kind-icon">Base<wbr>Selector<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/cci18nproviderprops.html" class="tsd-kind-icon">CCI18n<wbr>Provider<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/cacheoptions.html" class="tsd-kind-icon">Cache<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/componentscaretheme.html" class="tsd-kind-icon">Components<wbr>Care<wbr>Theme</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/errorcomponentprops.html" class="tsd-kind-icon">Error<wbr>Component<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/formcontextdata.html" class="tsd-kind-icon">Form<wbr>Context<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/formnestedstate.html" class="tsd-kind-icon">Form<wbr>Nested<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/formprops.html" class="tsd-kind-icon">Form<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/idialogbuttonconfig.html" class="tsd-kind-icon">IDialog<wbr>Button<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/idialogconfigconfirm.html" class="tsd-kind-icon">IDialog<wbr>Config<wbr>Confirm</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/idialogconfigform.html" class="tsd-kind-icon">IDialog<wbr>Config<wbr>Form</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/idialogconfiginput.html" class="tsd-kind-icon">IDialog<wbr>Config<wbr>Input</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/idialogconfigsign.html" class="tsd-kind-icon">IDialog<wbr>Config<wbr>Sign</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/idialogconfigsimple.html" class="tsd-kind-icon">IDialog<wbr>Config<wbr>Simple</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/ithemeproviderprops.html" class="tsd-kind-icon">ITheme<wbr>Provider<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/modeldatatype.html" class="tsd-kind-icon">Model<wbr>Data<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/modelfielddefinition.html" class="tsd-kind-icon">Model<wbr>Field<wbr>Definition</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/modelrenderparams.html" class="tsd-kind-icon">Model<wbr>Render<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/modelvisibility.html" class="tsd-kind-icon">Model<wbr>Visibility</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/multiselectprops.html" class="tsd-kind-icon">Multi<wbr>Select<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/multiselectwithcheckboxprops.html" class="tsd-kind-icon">Multi<wbr>Select<wbr>With<wbr>Check<wbr>Box<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/multiselectwithcheckboxtheme.html" class="tsd-kind-icon">Multi<wbr>Select<wbr>With<wbr>Check<wbr>Box<wbr>Theme</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/multiselectwithtagsprops.html" class="tsd-kind-icon">Multi<wbr>Select<wbr>With<wbr>Tags<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/multiselectwithoutgroupprops.html" class="tsd-kind-icon">Multi<wbr>Select<wbr>Without<wbr>Group<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/multiselectordata.html" class="tsd-kind-icon">Multi<wbr>Selector<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/pageprops.html" class="tsd-kind-icon">Page<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/pagevisibility.html" class="tsd-kind-icon">Page<wbr>Visibility</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/permissioncontextproviderprops.html" class="tsd-kind-icon">Permission<wbr>Context<wbr>Provider<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/portallayoutcontexttype.html" class="tsd-kind-icon">Portal<wbr>Layout<wbr>Context<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/responsemeta.html" class="tsd-kind-icon">Response<wbr>Meta</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/selectorlruoptions.html" class="tsd-kind-icon">Selector<wbr>Lru<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/selectortheme.html" class="tsd-kind-icon">Selector<wbr>Theme</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/signpaddialogprops.html" class="tsd-kind-icon">Sign<wbr>Pad<wbr>Dialog<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#advanceddeleterequest" class="tsd-kind-icon">Advanced<wbr>Delete<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#customvalidationhandler" class="tsd-kind-icon">Custom<wbr>Validation<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#dialogcontexttype" class="tsd-kind-icon">Dialog<wbr>Context<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#dialogtype" class="tsd-kind-icon">Dialog<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#formcontextdatalite" class="tsd-kind-icon">Form<wbr>Context<wbr>Data<wbr>Lite</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#genericwithstyles" class="tsd-kind-icon">Generic<wbr>With<wbr>Styles</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#getdefaultthemecallback" class="tsd-kind-icon">Get<wbr>Default<wbr>Theme<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#idialogconfigconfirmasync" class="tsd-kind-icon">IDialog<wbr>Config<wbr>Confirm<wbr>Async</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#idialogconfiginputasync" class="tsd-kind-icon">IDialog<wbr>Config<wbr>Input<wbr>Async</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#modeldata" class="tsd-kind-icon">Model<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#modeldatatypedecimalrendererccparams" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Decimal<wbr>RendererCCParams</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#modeldatatypeintegerrendererccparams" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>Integer<wbr>RendererCCParams</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#modeldatatypestringrendererccparams" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>String<wbr>RendererCCParams</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#modeldatatypestringrenderermuiparams" class="tsd-kind-icon">Model<wbr>Data<wbr>Type<wbr>String<wbr>RendererMUIParams</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#modelfield" class="tsd-kind-icon">Model<wbr>Field</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#modelfieldname" class="tsd-kind-icon">Model<wbr>Field<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#modelfiltertype" class="tsd-kind-icon">Model<wbr>Filter<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#modelgetresponse" class="tsd-kind-icon">Model<wbr>Get<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#modelgetresponserelations" class="tsd-kind-icon">Model<wbr>Get<wbr>Response<wbr>Relations</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#modelrecord" class="tsd-kind-icon">Model<wbr>Record</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#multiselectwithcheckboxthemeexpert" class="tsd-kind-icon">Multi<wbr>Select<wbr>With<wbr>Check<wbr>Box<wbr>Theme<wbr>Expert</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#permission" class="tsd-kind-icon">Permission</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#portallayoutprops" class="tsd-kind-icon">Portal<wbr>Layout<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#postsubmithandler" class="tsd-kind-icon">Post<wbr>Submit<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#selectorcustomstylesclasskey" class="tsd-kind-icon">Selector<wbr>Custom<wbr>Styles<wbr>Class<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#selectorthemeexpert" class="tsd-kind-icon">Selector<wbr>Theme<wbr>Expert</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#setthemeaction" class="tsd-kind-icon">Set<wbr>Theme<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#actionbutton" class="tsd-kind-icon">Action<wbr>Button</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#appsicon" class="tsd-kind-icon">Apps<wbr>Icon</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#backenddatagrid" class="tsd-kind-icon">Backend<wbr>Data<wbr>Grid</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#backendmultiselect" class="tsd-kind-icon">Backend<wbr>Multi<wbr>Select</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#backendmultiselectwithtags" class="tsd-kind-icon">Backend<wbr>Multi<wbr>Select<wbr>With<wbr>Tags</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#backendsingleselect" class="tsd-kind-icon">Backend<wbr>Single<wbr>Select</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#baseselector" class="tsd-kind-icon">Base<wbr>Selector</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#cci18nprovider" class="tsd-kind-icon">CCI18n<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#crud" class="tsd-kind-icon">CRUD</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#centeredtypography" class="tsd-kind-icon">Centered<wbr>Typography</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#checkbox" class="tsd-kind-icon">Checkbox</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#collapsiblemenu" class="tsd-kind-icon">Collapsible<wbr>Menu</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#crudfileupload" class="tsd-kind-icon">Crud<wbr>File<wbr>Upload</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#crudmultiimage" class="tsd-kind-icon">Crud<wbr>Multi<wbr>Image</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#crudmultiselect" class="tsd-kind-icon">Crud<wbr>Multi<wbr>Select</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#crudmultiselectwithgroups" class="tsd-kind-icon">Crud<wbr>Multi<wbr>Select<wbr>With<wbr>Groups</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#currencyinput" class="tsd-kind-icon">Currency<wbr>Input</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#datagrid" class="tsd-kind-icon">Data<wbr>Grid</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#datagridlocalstoragepersist" class="tsd-kind-icon">Data<wbr>Grid<wbr>Local<wbr>Storage<wbr>Persist</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#dateinput" class="tsd-kind-icon">Date<wbr>Input</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#datetimeinput" class="tsd-kind-icon">Date<wbr>Time<wbr>Input</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#decimalinputfield" class="tsd-kind-icon">Decimal<wbr>Input<wbr>Field</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#dialogcontextprovider" class="tsd-kind-icon">Dialog<wbr>Context<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#excelfileicon" class="tsd-kind-icon">Excel<wbr>File<wbr>Icon</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#exporticon" class="tsd-kind-icon">Export<wbr>Icon</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#filteractiveicon" class="tsd-kind-icon">Filter<wbr>Active<wbr>Icon</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#filtericon" class="tsd-kind-icon">Filter<wbr>Icon</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#form" class="tsd-kind-icon">Form</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#formbuttons" class="tsd-kind-icon">Form<wbr>Buttons</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#formfield" class="tsd-kind-icon">Form<wbr>Field</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#framework" class="tsd-kind-icon">Framework</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#gridmultiselectfilter" class="tsd-kind-icon">Grid<wbr>Multi<wbr>Select<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#gridsingleselectfilter" class="tsd-kind-icon">Grid<wbr>Single<wbr>Select<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#groupbox" class="tsd-kind-icon">Group<wbr>Box</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#howtobox" class="tsd-kind-icon">How<wbr>ToBox</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#iconbuttonwithtext" class="tsd-kind-icon">Icon<wbr>Button<wbr>With<wbr>Text</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#imagebox" class="tsd-kind-icon">Image<wbr>Box</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#imageselector" class="tsd-kind-icon">Image<wbr>Selector</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#infobox" class="tsd-kind-icon">Info<wbr>Box</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#integerinputfield" class="tsd-kind-icon">Integer<wbr>Input<wbr>Field</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#jumboreactdarkmenuitem" class="tsd-kind-icon">Jumbo<wbr>React<wbr>Dark<wbr>Menu<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#jumboreactlightmenuitem" class="tsd-kind-icon">Jumbo<wbr>React<wbr>Light<wbr>Menu<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#loader" class="tsd-kind-icon">Loader</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#localizeddatepicker" class="tsd-kind-icon">Localized<wbr>Date<wbr>Picker</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#localizeddatetimepicker" class="tsd-kind-icon">Localized<wbr>Date<wbr>Time<wbr>Picker</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#localizedkeyboarddatepicker" class="tsd-kind-icon">Localized<wbr>Keyboard<wbr>Date<wbr>Picker</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#materialmenuitem" class="tsd-kind-icon">Material<wbr>Menu<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#menubase" class="tsd-kind-icon">Menu<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#modelvisibilitydisabled" class="tsd-kind-icon">Model<wbr>Visibility<wbr>Disabled</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#modelvisibilitydisabledreadonly" class="tsd-kind-icon">Model<wbr>Visibility<wbr>Disabled<wbr>Read<wbr>Only</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#modelvisibilityedit" class="tsd-kind-icon">Model<wbr>Visibility<wbr>Edit</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#modelvisibilityeditreadonly" class="tsd-kind-icon">Model<wbr>Visibility<wbr>Edit<wbr>Read<wbr>Only</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#modelvisibilityeditrequired" class="tsd-kind-icon">Model<wbr>Visibility<wbr>Edit<wbr>Required</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#modelvisibilitygridedit" class="tsd-kind-icon">Model<wbr>Visibility<wbr>Grid<wbr>Edit</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#modelvisibilitygridedithidden" class="tsd-kind-icon">Model<wbr>Visibility<wbr>Grid<wbr>Edit<wbr>Hidden</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#modelvisibilitygrideditreadonly" class="tsd-kind-icon">Model<wbr>Visibility<wbr>Grid<wbr>Edit<wbr>Read<wbr>Only</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#modelvisibilitygrideditreadonlyhidden" class="tsd-kind-icon">Model<wbr>Visibility<wbr>Grid<wbr>Edit<wbr>Read<wbr>Only<wbr>Hidden</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#modelvisibilitygridview" class="tsd-kind-icon">Model<wbr>Visibility<wbr>Grid<wbr>View</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#modelvisibilitygridviewhidden" class="tsd-kind-icon">Model<wbr>Visibility<wbr>Grid<wbr>View<wbr>Hidden</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#modelvisibilityhidden" class="tsd-kind-icon">Model<wbr>Visibility<wbr>Hidden</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#modelvisibilityview" class="tsd-kind-icon">Model<wbr>Visibility<wbr>View</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#multiimage" class="tsd-kind-icon">Multi<wbr>Image</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#multiselect" class="tsd-kind-icon">Multi<wbr>Select</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#multiselectentry" class="tsd-kind-icon">Multi<wbr>Select<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#multiselectwithcheckbox" class="tsd-kind-icon">Multi<wbr>Select<wbr>With<wbr>Check<wbr>Box</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#multiselectwithtags" class="tsd-kind-icon">Multi<wbr>Select<wbr>With<wbr>Tags</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#multiselectwithoutgroup" class="tsd-kind-icon">Multi<wbr>Select<wbr>Without<wbr>Group</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#notifications" class="tsd-kind-icon">Notifications</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#numberformatter" class="tsd-kind-icon">Number<wbr>Formatter</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#pdffileicon" class="tsd-kind-icon">Pdf<wbr>File<wbr>Icon</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#permissioncontextprovider" class="tsd-kind-icon">Permission<wbr>Context<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#portallayout" class="tsd-kind-icon">Portal<wbr>Layout</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#powerpointfileicon" class="tsd-kind-icon">Power<wbr>Point<wbr>File<wbr>Icon</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#reseticon" class="tsd-kind-icon">Reset<wbr>Icon</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#routedmenu" class="tsd-kind-icon">Routed<wbr>Menu</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#scrollableschedule" class="tsd-kind-icon">Scrollable<wbr>Schedule</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#signicon" class="tsd-kind-icon">Sign<wbr>Icon</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#signalportlet" class="tsd-kind-icon">Signal<wbr>Portlet</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#signaturepad" class="tsd-kind-icon">Signature<wbr>Pad</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#singleselect" class="tsd-kind-icon">Single<wbr>Select</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#subactionbutton" class="tsd-kind-icon">Sub<wbr>Action<wbr>Button</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#textfieldwithhelp" class="tsd-kind-icon">Text<wbr>Field<wbr>With<wbr>Help</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#tuneicon" class="tsd-kind-icon">Tune<wbr>Icon</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#verticaldivider" class="tsd-kind-icon">Vertical<wbr>Divider</a>
+					</li>
+					<li class=" tsd-kind-property">
+						<a href="modules.html#wordfileicon" class="tsd-kind-icon">Word<wbr>File<wbr>Icon</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#componentscarei18n" class="tsd-kind-icon">Components<wbr>Care<wbr>I18n</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#confirmdialog" class="tsd-kind-icon">Confirm<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#dialogcontext" class="tsd-kind-icon">Dialog<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#errordialog" class="tsd-kind-icon">Error<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#formcontext" class="tsd-kind-icon">Form<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#formcontextlite" class="tsd-kind-icon">Form<wbr>Context<wbr>Lite</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#formdialog" class="tsd-kind-icon">Form<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#frameworkhistory" class="tsd-kind-icon">Framework<wbr>History</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#infodialog" class="tsd-kind-icon">Info<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#inputdialog" class="tsd-kind-icon">Input<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#modeldatastore" class="tsd-kind-icon">Model<wbr>Data<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#permissioncontext" class="tsd-kind-icon">Permission<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#portallayoutcontext" class="tsd-kind-icon">Portal<wbr>Layout<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#selectorsmalllistitem" class="tsd-kind-icon">Selector<wbr>Small<wbr>List<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#signdialog" class="tsd-kind-icon">Sign<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#smalliconbutton" class="tsd-kind-icon">Small<wbr>Icon<wbr>Button</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#smalllistitem" class="tsd-kind-icon">Small<wbr>List<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#smalllistitemicon" class="tsd-kind-icon">Small<wbr>List<wbr>Item<wbr>Icon</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#smallesticonbutton" class="tsd-kind-icon">Smallest<wbr>Icon<wbr>Button</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#themecontext" class="tsd-kind-icon">Theme<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#fileuploadgeneric" class="tsd-kind-icon">File<wbr>Upload<wbr>Generic</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#weeklyschedule" class="tsd-kind-icon">Weekly<wbr>Schedule</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-private">
+						<a href="modules.html#addgetparams" class="tsd-kind-icon">add<wbr>Get<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#cleanclassmap" class="tsd-kind-icon">clean<wbr>Class<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#colortorgba" class="tsd-kind-icon">color<wbr>ToRgba</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#combineclassmaps" class="tsd-kind-icon">combine<wbr>Class<wbr>Maps</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#combineclassnames" class="tsd-kind-icon">combine<wbr>Class<wbr>Names</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#combinecolors" class="tsd-kind-icon">combine<wbr>Colors</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#debounce" class="tsd-kind-icon">debounce</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#debouncepromise" class="tsd-kind-icon">debounce<wbr>Promise</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#deepassign" class="tsd-kind-icon">deep<wbr>Assign</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#delocalizenumber" class="tsd-kind-icon">delocalize<wbr>Number</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#filetodata" class="tsd-kind-icon">file<wbr>ToData</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#filtersortpaginate" class="tsd-kind-icon">filter<wbr>Sort<wbr>Paginate</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getfileext" class="tsd-kind-icon">get<wbr>File<wbr>Ext</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getnumberseparator" class="tsd-kind-icon">get<wbr>Number<wbr>Separator</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getstandardtheme" class="tsd-kind-icon">get<wbr>Standard<wbr>Theme</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#haspermission" class="tsd-kind-icon">has<wbr>Permission</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#isobjectempty" class="tsd-kind-icon">is<wbr>Object<wbr>Empty</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#last" class="tsd-kind-icon">last</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#makethemestyles" class="tsd-kind-icon">make<wbr>Theme<wbr>Styles</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#matchmime" class="tsd-kind-icon">match<wbr>Mime</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#measuretext" class="tsd-kind-icon">measure<wbr>Text</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#parselocalizednumber" class="tsd-kind-icon">parse<wbr>Localized<wbr>Number</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#processimage" class="tsd-kind-icon">process<wbr>Image</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#processimageb64" class="tsd-kind-icon">process<wbr>Image<wbr>B64</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#setframeworkhistory" class="tsd-kind-icon">set<wbr>Framework<wbr>History</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#shallowcompare" class="tsd-kind-icon">shallow<wbr>Compare</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#showconfirmdialog" class="tsd-kind-icon">show<wbr>Confirm<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#showconfirmdialogbool" class="tsd-kind-icon">show<wbr>Confirm<wbr>Dialog<wbr>Bool</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#showinfodialog" class="tsd-kind-icon">show<wbr>Info<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#showinputdialog" class="tsd-kind-icon">show<wbr>Input<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#showsignpaddialog" class="tsd-kind-icon">show<wbr>Sign<wbr>Pad<wbr>Dialog</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#sleep" class="tsd-kind-icon">sleep</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#uniquearray" class="tsd-kind-icon">unique<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#usedate" class="tsd-kind-icon">use<wbr>Date</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#usedatehm" class="tsd-kind-icon">use<wbr>DateHM</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#usedatehms" class="tsd-kind-icon">use<wbr>DateHMS</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#usedialogcontext" class="tsd-kind-icon">use<wbr>Dialog<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#usedropzone" class="tsd-kind-icon">use<wbr>Drop<wbr>Zone</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#useformcontext" class="tsd-kind-icon">use<wbr>Form<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#useformcontextlite" class="tsd-kind-icon">use<wbr>Form<wbr>Context<wbr>Lite</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#useinputcursorfix" class="tsd-kind-icon">use<wbr>Input<wbr>Cursor<wbr>Fix</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#usemultiplestyles" class="tsd-kind-icon">use<wbr>Multiple<wbr>Styles</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#usepermissioncontext" class="tsd-kind-icon">use<wbr>Permission<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#useportallayoutcontext" class="tsd-kind-icon">use<wbr>Portal<wbr>Layout<wbr>Context</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

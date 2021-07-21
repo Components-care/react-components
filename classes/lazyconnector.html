@@ -1,0 +1,737 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>LazyConnector | components-care</title>
+	<meta name="description" content="Documentation for components-care">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">components-care</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">components-care</a>
+				</li>
+				<li>
+					<a href="lazyconnector.html">LazyConnector</a>
+				</li>
+			</ul>
+			<h1>Class LazyConnector&lt;KeyT, VisibilityT, CustomT&gt;</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Forwards all read calls (index, read) to the real connector directly but queues all writing calls (create, update, delete) which can be fired at once</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>remarks</dt>
+						<dd><p>Does not support relations, enhances read/index calls with locally updated data</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>KeyT<span class="tsd-signature-symbol">: </span><a href="../modules.html#modelfieldname" class="tsd-signature-type" data-tsd-kind="Type alias">ModelFieldName</a></h4>
+					</li>
+					<li>
+						<h4>VisibilityT<span class="tsd-signature-symbol">: </span><a href="../interfaces/pagevisibility.html" class="tsd-signature-type" data-tsd-kind="Interface">PageVisibility</a></h4>
+					</li>
+					<li>
+						<h4>CustomT</h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="connector.html" class="tsd-signature-type" data-tsd-kind="Class">Connector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">LazyConnector</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="lazyconnector.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="lazyconnector.html#fake_id_prefix" class="tsd-kind-icon">FAKE_<wbr>ID_<wbr>PREFIX</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="lazyconnector.html#datagridexporters" class="tsd-kind-icon">data<wbr>Grid<wbr>Exporters</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="lazyconnector.html#deleteadvanced" class="tsd-kind-icon">delete<wbr>Advanced</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="lazyconnector.html#fakeidcounter" class="tsd-kind-icon">fake<wbr>IdCounter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="lazyconnector.html#fakeidmapping" class="tsd-kind-icon">fake<wbr>IdMapping</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="lazyconnector.html#fakeidmappingrev" class="tsd-kind-icon">fake<wbr>IdMapping<wbr>Rev</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="lazyconnector.html#fakereads" class="tsd-kind-icon">fake<wbr>Reads</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="lazyconnector.html#onqueuechange" class="tsd-kind-icon">on<wbr>Queue<wbr>Change</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="lazyconnector.html#queue" class="tsd-kind-icon">queue</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="lazyconnector.html#realconnector" class="tsd-kind-icon">real<wbr>Connector</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="lazyconnector.html#create" class="tsd-kind-icon">create</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="lazyconnector.html#delete" class="tsd-kind-icon">delete</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="lazyconnector.html#deletemultiple" class="tsd-kind-icon">delete<wbr>Multiple</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="lazyconnector.html#handleadvanceddelete" class="tsd-kind-icon">handle<wbr>Advanced<wbr>Delete</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="lazyconnector.html#index" class="tsd-kind-icon">index</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="lazyconnector.html#mapid" class="tsd-kind-icon">map<wbr>Id</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="lazyconnector.html#onafteroperation" class="tsd-kind-icon">on<wbr>After<wbr>Operation</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="lazyconnector.html#read" class="tsd-kind-icon">read</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="lazyconnector.html#unmapid" class="tsd-kind-icon">unmap<wbr>Id</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="lazyconnector.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="lazyconnector.html#workqueue" class="tsd-kind-icon">work<wbr>Queue</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Lazy<wbr>Connector&lt;KeyT, VisibilityT, CustomT&gt;<span class="tsd-signature-symbol">(</span>connector<span class="tsd-signature-symbol">: </span><a href="apiconnector.html" class="tsd-signature-type" data-tsd-kind="Class">ApiConnector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span>, fakeReads<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, onQueueChange<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">QueueChangeHandler</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="lazyconnector.html" class="tsd-signature-type" data-tsd-kind="Class">LazyConnector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="connector.html">Connector</a>.<a href="connector.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in src/backend-integration/Connector/LazyConnector.ts:40</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>KeyT<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h4>
+								</li>
+								<li>
+									<h4>VisibilityT<span class="tsd-signature-symbol">: </span><a href="../interfaces/pagevisibility.html" class="tsd-signature-type" data-tsd-kind="Interface">PageVisibility</a></h4>
+								</li>
+								<li>
+									<h4>CustomT</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>connector: <a href="apiconnector.html" class="tsd-signature-type" data-tsd-kind="Class">ApiConnector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>fakeReads: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> onQueueChange: <span class="tsd-signature-type">QueueChangeHandler</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="lazyconnector.html" class="tsd-signature-type" data-tsd-kind="Class">LazyConnector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="fake_id_prefix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> FAKE_<wbr>ID_<wbr>PREFIX</h3>
+					<div class="tsd-signature tsd-kind-icon">FAKE_<wbr>ID_<wbr>PREFIX<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;fake-id-&quot;</span><span class="tsd-signature-symbol"> = &quot;fake-id-&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/backend-integration/Connector/LazyConnector.ts:37</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="datagridexporters" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> data<wbr>Grid<wbr>Exporters</h3>
+					<div class="tsd-signature tsd-kind-icon">data<wbr>Grid<wbr>Exporters<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IDataGridExporter</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="connector.html">Connector</a>.<a href="connector.html#datagridexporters">dataGridExporters</a></p>
+						<ul>
+							<li>Defined in src/backend-integration/Connector/Connector.ts:113</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>DataGrid exporters supported by this backend connector</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="deleteadvanced" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> delete<wbr>Advanced</h3>
+					<div class="tsd-signature tsd-kind-icon">delete<wbr>Advanced<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><a href="../modules.html#advanceddeleterequest" class="tsd-signature-type" data-tsd-kind="Type alias">AdvancedDeleteRequest</a>, model<span class="tsd-signature-symbol">?: </span><a href="model.html" class="tsd-signature-type" data-tsd-kind="Class">Model</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="connector.html">Connector</a>.<a href="connector.html#deleteadvanced">deleteAdvanced</a></p>
+						<ul>
+							<li>Defined in src/backend-integration/Connector/Connector.ts:105</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Advanced deletion handler which supports delete all</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The deletion request</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="fakeidcounter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> fake<wbr>IdCounter</h3>
+					<div class="tsd-signature tsd-kind-icon">fake<wbr>IdCounter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/backend-integration/Connector/LazyConnector.ts:38</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="fakeidmapping" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> fake<wbr>IdMapping</h3>
+					<div class="tsd-signature tsd-kind-icon">fake<wbr>IdMapping<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/backend-integration/Connector/LazyConnector.ts:39</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="fakeidmappingrev" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> fake<wbr>IdMapping<wbr>Rev</h3>
+					<div class="tsd-signature tsd-kind-icon">fake<wbr>IdMapping<wbr>Rev<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/backend-integration/Connector/LazyConnector.ts:40</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="fakereads" class="tsd-anchor"></a>
+					<h3>fake<wbr>Reads</h3>
+					<div class="tsd-signature tsd-kind-icon">fake<wbr>Reads<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/backend-integration/Connector/LazyConnector.ts:33</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="onqueuechange" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Queue<wbr>Change</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Queue<wbr>Change<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">QueueChangeHandler</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/backend-integration/Connector/LazyConnector.ts:35</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="queue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> queue</h3>
+					<div class="tsd-signature tsd-kind-icon">queue<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">QueuedFunction</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/backend-integration/Connector/LazyConnector.ts:34</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="realconnector" class="tsd-anchor"></a>
+					<h3>real<wbr>Connector</h3>
+					<div class="tsd-signature tsd-kind-icon">real<wbr>Connector<span class="tsd-signature-symbol">:</span> <a href="apiconnector.html" class="tsd-signature-type" data-tsd-kind="Class">ApiConnector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in src/backend-integration/Connector/LazyConnector.ts:32</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="create" class="tsd-anchor"></a>
+					<h3>create</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span>, model<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="model.html" class="tsd-signature-type" data-tsd-kind="Class">Model</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#modelgetresponse" class="tsd-signature-type" data-tsd-kind="Type alias">ModelGetResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="connector.html">Connector</a>.<a href="connector.html#create">create</a></p>
+								<ul>
+									<li>Defined in src/backend-integration/Connector/LazyConnector.ts:57</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>model: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="model.html" class="tsd-signature-type" data-tsd-kind="Class">Model</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules.html#modelgetresponse" class="tsd-signature-type" data-tsd-kind="Type alias">ModelGetResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="delete" class="tsd-anchor"></a>
+					<h3>delete</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, model<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="model.html" class="tsd-signature-type" data-tsd-kind="Class">Model</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="connector.html">Connector</a>.<a href="connector.html#delete">delete</a></p>
+								<ul>
+									<li>Defined in src/backend-integration/Connector/LazyConnector.ts:83</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>model: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="model.html" class="tsd-signature-type" data-tsd-kind="Class">Model</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="deletemultiple" class="tsd-anchor"></a>
+					<h3>delete<wbr>Multiple</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Multiple<span class="tsd-signature-symbol">(</span>ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, model<span class="tsd-signature-symbol">?: </span><a href="model.html" class="tsd-signature-type" data-tsd-kind="Class">Model</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="connector.html">Connector</a>.<a href="connector.html#deletemultiple">deleteMultiple</a></p>
+								<ul>
+									<li>Defined in src/backend-integration/Connector/LazyConnector.ts:212</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ids: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> model: <a href="model.html" class="tsd-signature-type" data-tsd-kind="Class">Model</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="handleadvanceddelete" class="tsd-anchor"></a>
+					<h3>handle<wbr>Advanced<wbr>Delete</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Advanced<wbr>Delete<span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><a href="../modules.html#advanceddeleterequest" class="tsd-signature-type" data-tsd-kind="Type alias">AdvancedDeleteRequest</a>, model<span class="tsd-signature-symbol">?: </span><a href="model.html" class="tsd-signature-type" data-tsd-kind="Class">Model</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/backend-integration/Connector/LazyConnector.ts:242</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>req: <a href="../modules.html#advanceddeleterequest" class="tsd-signature-type" data-tsd-kind="Type alias">AdvancedDeleteRequest</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> model: <a href="model.html" class="tsd-signature-type" data-tsd-kind="Class">Model</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="index" class="tsd-anchor"></a>
+					<h3>index</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">index<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IDataGridLoadDataParameters</span><span class="tsd-signature-symbol">&gt;</span>, model<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="model.html" class="tsd-signature-type" data-tsd-kind="Class">Model</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/responsemeta.html" class="tsd-signature-type" data-tsd-kind="Interface">ResponseMeta</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="connector.html">Connector</a>.<a href="connector.html#index">index</a></p>
+								<ul>
+									<li>Defined in src/backend-integration/Connector/LazyConnector.ts:106</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>params: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IDataGridLoadDataParameters</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>model: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="model.html" class="tsd-signature-type" data-tsd-kind="Class">Model</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/responsemeta.html" class="tsd-signature-type" data-tsd-kind="Interface">ResponseMeta</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="mapid" class="tsd-anchor"></a>
+					<h3>map<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">map<wbr>Id<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/backend-integration/Connector/LazyConnector.ts:316</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps a potentially fake ID to a real ID</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><p>Only works after workQueue has been called</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ID</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="onafteroperation" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> on<wbr>After<wbr>Operation</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>After<wbr>Operation<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/backend-integration/Connector/LazyConnector.ts:284</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="read" class="tsd-anchor"></a>
+					<h3>read</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">read<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, model<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="model.html" class="tsd-signature-type" data-tsd-kind="Class">Model</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#modelgetresponse" class="tsd-signature-type" data-tsd-kind="Type alias">ModelGetResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#modelgetresponse" class="tsd-signature-type" data-tsd-kind="Type alias">ModelGetResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="connector.html">Connector</a>.<a href="connector.html#read">read</a></p>
+								<ul>
+									<li>Defined in src/backend-integration/Connector/LazyConnector.ts:152</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>model: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="model.html" class="tsd-signature-type" data-tsd-kind="Class">Model</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules.html#modelgetresponse" class="tsd-signature-type" data-tsd-kind="Type alias">ModelGetResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#modelgetresponse" class="tsd-signature-type" data-tsd-kind="Type alias">ModelGetResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="unmapid" class="tsd-anchor"></a>
+					<h3>unmap<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">unmap<wbr>Id<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/backend-integration/Connector/LazyConnector.ts:324</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps a potentially real ID to a fake ID</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The ID</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span>, model<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="model.html" class="tsd-signature-type" data-tsd-kind="Class">Model</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#modelgetresponse" class="tsd-signature-type" data-tsd-kind="Type alias">ModelGetResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#modelgetresponse" class="tsd-signature-type" data-tsd-kind="Type alias">ModelGetResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="connector.html">Connector</a>.<a href="connector.html#update">update</a></p>
+								<ul>
+									<li>Defined in src/backend-integration/Connector/LazyConnector.ts:171</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>model: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="model.html" class="tsd-signature-type" data-tsd-kind="Class">Model</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">VisibilityT</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CustomT</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules.html#modelgetresponse" class="tsd-signature-type" data-tsd-kind="Type alias">ModelGetResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#modelgetresponse" class="tsd-signature-type" data-tsd-kind="Type alias">ModelGetResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeyT</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="workqueue" class="tsd-anchor"></a>
+					<h3>work<wbr>Queue</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">work<wbr>Queue<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in src/backend-integration/Connector/LazyConnector.ts:288</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-has-type-parameter">
+						<a href="lazyconnector.html" class="tsd-kind-icon">Lazy<wbr>Connector</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+								<a href="lazyconnector.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="lazyconnector.html#fake_id_prefix" class="tsd-kind-icon">FAKE_<wbr>ID_<wbr>PREFIX</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="lazyconnector.html#datagridexporters" class="tsd-kind-icon">data<wbr>Grid<wbr>Exporters</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="lazyconnector.html#deleteadvanced" class="tsd-kind-icon">delete<wbr>Advanced</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="lazyconnector.html#fakeidcounter" class="tsd-kind-icon">fake<wbr>IdCounter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="lazyconnector.html#fakeidmapping" class="tsd-kind-icon">fake<wbr>IdMapping</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="lazyconnector.html#fakeidmappingrev" class="tsd-kind-icon">fake<wbr>IdMapping<wbr>Rev</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="lazyconnector.html#fakereads" class="tsd-kind-icon">fake<wbr>Reads</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="lazyconnector.html#onqueuechange" class="tsd-kind-icon">on<wbr>Queue<wbr>Change</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="lazyconnector.html#queue" class="tsd-kind-icon">queue</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="lazyconnector.html#realconnector" class="tsd-kind-icon">real<wbr>Connector</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="lazyconnector.html#create" class="tsd-kind-icon">create</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="lazyconnector.html#delete" class="tsd-kind-icon">delete</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="lazyconnector.html#deletemultiple" class="tsd-kind-icon">delete<wbr>Multiple</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="lazyconnector.html#handleadvanceddelete" class="tsd-kind-icon">handle<wbr>Advanced<wbr>Delete</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="lazyconnector.html#index" class="tsd-kind-icon">index</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="lazyconnector.html#mapid" class="tsd-kind-icon">map<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="lazyconnector.html#onafteroperation" class="tsd-kind-icon">on<wbr>After<wbr>Operation</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="lazyconnector.html#read" class="tsd-kind-icon">read</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="lazyconnector.html#unmapid" class="tsd-kind-icon">unmap<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="lazyconnector.html#update" class="tsd-kind-icon">update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="lazyconnector.html#workqueue" class="tsd-kind-icon">work<wbr>Queue</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
