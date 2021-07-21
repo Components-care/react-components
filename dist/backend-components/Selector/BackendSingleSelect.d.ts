@@ -1,0 +1,48 @@
+/// <reference types="react" />
+import { BaseSelectorData, BaseSelectorProps, SelectorLruOptions } from "../../standalone";
+import Model, { ModelFieldName, PageVisibility } from "../../backend-integration/Model/Model";
+import { DataGridSortSetting } from "../../standalone/DataGrid/DataGrid";
+export declare type BackendSingleSelectLruOptions<DataT extends BaseSelectorData> = Omit<SelectorLruOptions<DataT>, "loadData">;
+export interface BackendSingleSelectProps<KeyT extends ModelFieldName, VisibilityT extends PageVisibility, CustomT> extends Omit<BaseSelectorProps<BaseSelectorData>, "onLoad" | "selected" | "onSelect" | "lru"> {
+    /**
+     * The model to use
+     */
+    model: Model<KeyT, VisibilityT, CustomT>;
+    /**
+     * The debounce time for search in ms
+     * @default 500
+     */
+    searchDebounceTime?: number;
+    /**
+     * Callback that converts the model data to the actual data displayed in the selector
+     * @param modelData The model data
+     */
+    modelToSelectorData: (modelData: Record<KeyT, unknown>) => Promise<BaseSelectorData> | BaseSelectorData;
+    /**
+     * The amount of search results to load (defaults to 25)
+     */
+    searchResultLimit?: number;
+    /**
+     * Selection change handler
+     * @param data The selected data entry/entries values
+     */
+    onSelect?: (value: string | null) => void;
+    /**
+     * The currently selected values
+     */
+    selected: string | null;
+    /**
+     * Sort settings
+     */
+    sort?: DataGridSortSetting[];
+    /**
+     * Initial data (model format) used for selected cache
+     */
+    initialData?: Record<KeyT, unknown>[];
+    /**
+     * LRU settings
+     */
+    lru?: BackendSingleSelectLruOptions<BaseSelectorData>;
+}
+declare const _default: <KeyT extends string, VisibilityT extends PageVisibility, CustomT>(props: BackendSingleSelectProps<KeyT, VisibilityT, CustomT>) => JSX.Element;
+export default _default;
